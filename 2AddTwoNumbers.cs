@@ -1,13 +1,17 @@
 
 /**
 	this question is not very hard
-	The start node of singly-linked list is actually the number on the first digits (units), the second node is the number on the second digits (tens),so we just need to add the node first, check about carry and then move to next node. need to deal with the some cornor cases since the length of two list might be different.
+		The start node of singly-linked list is actually the number on the first digits (units), the second node is the number on the second digits (tens),so we just need to add the node first, check about carry and then move to next node. need to deal with the some cornor cases since the length of two list might be different.
 */
 
 /**
-	This problem is not hard, just a few things need to be careful;
+	A few things need to be careful;
 		1> carry need to calculate after head.val.
 		2> the value of two node to be assigned to another variable since the val of node and carry will affect each other when calculate
+*/
+
+/**
+	Time complexity : O(n)
 */
 
 /**
