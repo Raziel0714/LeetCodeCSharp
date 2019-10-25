@@ -11,6 +11,10 @@
 			if not, see the first char of s is equal to p or not, if not return false, yes, recheck again. 
 */
 
+/**
+	This solution is super slow, need to think about it again.
+*/
+
 public class Solution {
     public bool IsMatch(string s, string p) {
         if (String.IsNullOrEmpty(p)) return String.IsNullOrEmpty(s);
