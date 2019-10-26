@@ -1,6 +1,6 @@
 /**
 * This question is required to find the longest substring without repeating. Two pointers come to my mind directly, use one pointer to locate the start point of the string, and move end pointer when the substring doesn't contain repeat character. if we find a repeat character, move start to avoid.
-* how to check the substring, and move the substring is a question.
+* need to keep updating the substring when two pointers is moving.
 */
 
 
