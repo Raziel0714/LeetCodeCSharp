@@ -3,7 +3,6 @@
 * need to keep updating the substring when two pointers is moving.
 */
 
-
 public class Solution {
     public int LengthOfLongestSubstring(string s) {
         if(s == null) return 0;
@@ -21,4 +20,35 @@ public class Solution {
         }
         return ans;
     }
+}
+
+
+/**
+* Need a better way to save the substring
+* we can use a HashTable and Sliding windows
+* initiated a 128 length int array, 128 is because keyboard can only represent 128 characters.
+* ASCII has 256 chars.
+*
+*/
+
+public class Solution{
+	public int LengthOfLongestSubstring(string s){
+        int[] flags = new int[128];
+		for(int i = 0; i<flags.Length; i++){
+			flags[i] = -1;
+		}
+
+		int start = 0;
+		int res = 0;
+
+		for(int i = 0; i<s.Length; i++){
+			if(flags[s[i]] != -1){
+				start = Math.Max(start, flags[s[i]] + 1);
+			}
+			flags[s[i]] = i;
+			res = Math.Max(res, i - start + 1);
+		}
+
+		return res;
+	}
 }
