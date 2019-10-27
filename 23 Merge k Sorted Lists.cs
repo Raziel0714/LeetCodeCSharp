@@ -102,6 +102,5 @@ public class Solution {
 }
 
 /**
-    we can also use heap for this problem.
-    need to learn.
+    Java can also use minimum heap (priority queue) for this problem. but c# doesnt have a build-in class for minimum heap. 
 */
